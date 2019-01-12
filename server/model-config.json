@@ -1,0 +1,46 @@
+{
+  "_meta": {
+    "sources": [
+      "loopback/common/models",
+      "loopback/server/models",
+      "../common/models",
+      "./models"
+    ],
+    "mixins": [
+      "loopback/common/mixins",
+      "loopback/server/mixins",
+      "../common/mixins",
+      "./mixins"
+    ]
+  },
+  "User": {
+    "dataSource": "inventory"
+  },
+  "AccessToken": {
+    "dataSource": "inventory",
+    "public": true
+  },
+  "ACL": {
+    "dataSource": "inventory",
+    "public": true
+  },
+  "RoleMapping": {
+    "dataSource": "inventory",
+    "public": true,
+    "options": {
+      "strictObjectIDCoercion": true
+    }
+  },
+  "Role": {
+    "dataSource": "inventory",
+    "public": true
+  },
+  "book": {
+    "dataSource": "inventory",
+    "public": true
+  },
+  "BookDetails": {
+    "dataSource": "inventory",
+    "public": false
+  }
+}
