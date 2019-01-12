@@ -9,7 +9,7 @@
     "lint": "eslint .",
     "start": "node server.js",
     "posttest": "npm run lint && nsp check",
-    "dev" : "nodemon server/server.js --watch common --watch server"
+    "dev": "nodemon server/server.js --watch common --watch server"
   },
   "dependencies": {
     "compression": "^1.0.3",
