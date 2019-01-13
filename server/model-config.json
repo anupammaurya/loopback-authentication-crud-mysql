@@ -5,42 +5,34 @@
       "loopback/server/models",
       "../common/models",
       "./models"
-    ],
-    "mixins": [
-      "loopback/common/mixins",
-      "loopback/server/mixins",
-      "../common/mixins",
-      "./mixins"
     ]
   },
   "User": {
-    "dataSource": "inventory"
+    "dataSource": "inventory",
+    "public": true
   },
   "AccessToken": {
     "dataSource": "inventory",
-    "public": true
+    "public": false
   },
   "ACL": {
     "dataSource": "inventory",
-    "public": true
+    "public": false
   },
   "RoleMapping": {
     "dataSource": "inventory",
-    "public": true,
-    "options": {
-      "strictObjectIDCoercion": true
-    }
+    "public": false
   },
   "Role": {
     "dataSource": "inventory",
-    "public": true
+    "public": false
   },
   "book": {
     "dataSource": "inventory",
-    "public": true
+    "public": false
   },
   "BookDetails": {
     "dataSource": "inventory",
-    "public": false
+    "public": true
   }
 }
