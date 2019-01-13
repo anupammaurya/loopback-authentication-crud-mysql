@@ -8,7 +8,6 @@ $ git clone https://github.com/anupammaurya/loopback-authentication-crud-mysql.g
 $ cd loopback-crud
 $ npm install
 $ node .
-```
 
 In this example, we create some models to demonstrate authentication and authorization mechanisms in
 LoopBack. The application consists of four types of users:
